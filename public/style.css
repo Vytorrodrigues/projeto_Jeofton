@@ -7,74 +7,72 @@
 .root{
     --color--background: #b2d365;
     --font--color: #03160c;
-    --color--2: #1d623c;
+    --font-color--2: #1d623c;
     --color--3: #e9eee5;
-    --color--two: #59826c;
-    --color--two: #4c856c;
+    --color--4: #59826c;
+    --color--5: #4c856c;
 }
 
 .background{
     background-color: #b2d365;
     width: 100vw;
     height: 5rem;
-    color: var(--color--2);
 
-    & h2{
-        padding: 0.7rem;
-    }
-    & .navbar{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-    /* ===aqui vai ser um botão de dropdown, aqueles de menu=== */
-    & a{
-        text-align: center;
-        color: var(--color--background);
-        font-size: 18px;
-    }
-    /* ===aqui vai ser um botão de dropdown, aqueles de menu=== */
+        & .text-title{
+            color: #1d623c;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 28px;
+            padding: 0.3rem;
+        }
+            & .header-div{
+                display: flex;
+                justify-content: space-between;
+                padding: 0.8rem;
+            
+                /* ===aqui vai ser um botão de dropdown, aqueles de menu=== */
+                    & a{
+                        display: flex;
+                        overflow:visible;
+                        text-align: center;
+                        color: #03160c;
+                        font-size: 14px;
+                    }
+                /* ===aqui vai ser um botão de dropdown, aqueles de menu=== */
+            }
 }
 
 .main-content{
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 100vw;
+    gap: 2rem;
 
-    & picture{
-
-        & img{
-            width: 40rem;
-            height: 40rem;
-        }
+    & picture > img{
+        width: 25rem;
+        height: 26rem;
     }
-    & .sidebar-content{
-        display: flex;
-        flex-direction: column;
-        gap: 0.2rem;
-        justify-content: center;
 
-        /* ===quero organizar melhor isso, ainda não sei como=== */
-        & a{
-            text-align: center;
-            color: var(--color--background);
-            font-size: 20px;
-        }
-        /* ===quero organizar melhor isso, ainda não sei como=== */
-
-            & .solicitacoes{
+        & .sidebar-content{
+            display: flex;
+            
+            gap: 0.2rem;
+            justify-content: center;
+            flex-flow: column wrap;
+            
+            & .cards-links{
+                text-align: center;
                 display: grid;
                 gap: 0.2rem;
+                padding: 0.6rem;
+                    /* ===quero organizar melhor isso, ainda não sei como=== */
+                    & a{
+                        color: #1d623c;
+                    }
+                    /* ===quero organizar melhor isso, ainda não sei como=== */
             }
 
-                & .espera{
-                    display: grid;
-                    gap: 0.2rem;
-                }
-
-            & .realizados{
-                display: grid;
-                gap: 0.2rem;
-            }
+            
 
         & img{
             border-radius: 0.3rem;
