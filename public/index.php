@@ -17,24 +17,21 @@
 </header>
 
 <div class="container">
-    <div class="logo-box">
-        <img src="assets/ExamLink-logo.png" alt="ExamLink">
-    </div>
 
     <div class="cards">
         <div class="card">
-            <h3>Prancheta</h3>
+            <img class="ico" src="assets/solicitação-icon.png" alt="prancheta">
             <p><a href="cadastro.php">Solicitações</a></p>
         </div>
 
         <div class="card">
-            <h3>Exames Solicitados</h3>
-            <p><a href="src/lista.php">Ver solicitações</a></p>
+            <img  class="ico" src="assets/emEspera-icon.png" alt="solicitações">
+            <p><a href="src/lista.php">Em espera</a></p>
         </div>
 
         <div class="card">
-            <h3>Realizado</h3>
-            <p><a href="src/realizados.php">Exames realizados</a></p>
+            <img class="ico" src="assets/realizado-icon.png" alt="feito">
+            <p><a href="src/realizados.php">Realizados</a></p>
         </div>
     </div>
 </div>
