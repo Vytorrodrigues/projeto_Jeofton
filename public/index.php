@@ -1,6 +1,5 @@
 <?php
-    include './components/header.php';
-    include '../db/connection.php';
+    
 ?>
 <div class="container">
     <h1>Sistema de Cadastro de Pacientes</h1>
@@ -10,5 +9,5 @@
     <a class="btn" href="pages/cadastrar.php">Cadastrar Paciente</a>
 </div>
 <?php
-    include './components/footer.php';
+    ;
 ?>
