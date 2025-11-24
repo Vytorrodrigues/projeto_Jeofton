@@ -1,6 +1,5 @@
-<?php
-echo'
-<script></script>
-</body>
-</html>'
+<?php 
+echo '</div>
+    </body>
+    </html>';
 ?>

@@ -1,13 +1,16 @@
-<?php
-    
+<?php 
+    include './componentes/header.php';
+    include '../SRC/db/connection.php';
 ?>
-<div class="container">
-    <h1>Sistema de Cadastro de Pacientes</h1>
-
+<main>
+    <h1>Menu Principal</h1>
     <p>Escolha uma opção:</p>
+    <div class='menu-options'>
+        <a class="btn btn-primary" href="./core/create.php">Cadastrar solicitação</a>
+        <a class="btn btn-primary" href="./core/read.php">Listar solicitações</a>
+    </div>
+</main>
 
-    <a class="btn" href="pages/cadastrar.php">Cadastrar Paciente</a>
-</div>
 <?php
-    ;
+    include './componentes/footer.php'
 ?>
