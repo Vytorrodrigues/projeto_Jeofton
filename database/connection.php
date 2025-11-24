@@ -2,7 +2,7 @@
 $host     = "127.0.0.1";      
 $usuario  = "root";
 $senha    = "Vinha@12"; 
-$banco    = "hospital";
+$banco    = "pacientes";
 
 $conn = new mysqli($host, $usuario, $senha, $banco);
 
