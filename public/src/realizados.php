@@ -1,10 +1,8 @@
 <?php
-require_once __DIR__ . '/../db/connection.php';
+require_once __DIR__ . '/../../db/connection.php';
 
-// só exames feitos
 $sql = "SELECT id, nome, setor, exame, observacoes
-        FROM cadastro
-        WHERE status = 'feito'
+        FROM realizados_tabela 
         ORDER BY id DESC";
 
 $result = $conn->query($sql);
@@ -14,17 +12,17 @@ $result = $conn->query($sql);
 <head>
     <meta charset="UTF-8">
     <title>Exames realizados</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
 
 <header class="topbar">
     <h1>ExamLink</h1>
-    <nav>
-        <a href="index.php">Início</a>
-        <a href="cadastro.php">Nova solicitação</a>
-        <a href="lista.php">Solicitações</a>
-    </nav>
+        <nav>
+            <a href="../index.php">Início</a>
+            <a href="../cadastro.php">Nova solicitação</a>
+            <a href="realizados.php">Exames Realizados</a> 
+        </nav>
 </header>
 
 <div class="main-content">
@@ -51,10 +49,7 @@ $result = $conn->query($sql);
                     <td><?php echo htmlspecialchars($row["exame"]); ?></td>
                     <td><?php echo nl2br(htmlspecialchars($row["observacoes"])); ?></td>
                     <td class="actions">
-                        <a href="deletar.php?id=<?php echo $row['id']; ?>"
-                           onclick="return confirm('Excluir definitivamente este exame?');">
-                            Excluir
-                        </a>
+                        <p>Feito</p>
                     </td>
                 </tr>
             <?php endwhile; ?>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>ExamLink - Início</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css"> 
 </head>
 <body>
 
@@ -11,14 +11,14 @@
     <h1>ExamLink</h1>
     <nav>
         <a href="cadastro.php">Solicitações</a>
-        <a href="lista.php">Exames realizados</a>
+        <a href="src/lista.php">Exames solicitados</a>
+        <a href="src/realizados.php">Exames realizados</a>
     </nav>
 </header>
 
 <div class="container">
     <div class="logo-box">
-        <!-- pode trocar essa imagem depois -->
-        <img src="https://via.placeholder.com/300x300?text=ExamLink+Logo" alt="ExamLink">
+        <img src="assets/ExamLink-logo.png" alt="ExamLink">
     </div>
 
     <div class="cards">
@@ -28,8 +28,13 @@
         </div>
 
         <div class="card">
+            <h3>Exames Solicitados</h3>
+            <p><a href="src/lista.php">Ver solicitações</a></p>
+        </div>
+
+        <div class="card">
             <h3>Realizado</h3>
-            <p><a href="lista.php">Exames realizados</a></p>
+            <p><a href="src/realizados.php">Exames realizados</a></p>
         </div>
     </div>
 </div>

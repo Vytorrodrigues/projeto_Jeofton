@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../db/connection.php';
+require_once __DIR__ . '/../../db/connection.php';
 
 $sql = "SELECT id, nome, setor, exame, observacoes
         FROM cadastro
@@ -11,16 +11,17 @@ $result = $conn->query($sql);
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Exames realizados</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Exames Solicitados</title>
+    <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
 
 <header class="topbar">
     <h1>ExamLink</h1>
     <nav>
-        <a href="index.php">Início</a>
-        <a href="cadastro.php">Nova solicitação</a>
+        <a href="../index.php">Início</a>
+        <a href="../cadastro.php">Nova solicitação</a>
+        <a href="realizados.php">Exames realizados</a>
     </nav>
 </header>
 
@@ -48,10 +49,9 @@ $result = $conn->query($sql);
                     <td><?php echo htmlspecialchars($row["exame"]); ?></td>
                     <td><?php echo nl2br(htmlspecialchars($row["observacoes"])); ?></td>
                     <td class="actions">
-                        <a href="editar.php?id=<?php echo $row['id']; ?>">Editar</a>
-                        <a href="deletar.php?id=<?php echo $row['id']; ?>"
+                        <a href="feito.php?id=<?php echo $row['id']; ?>"
                            onclick="return confirm('Confirmar exclusão?');">
-                            Excluir
+                            Feito
                         </a>
                     </td>
                 </tr>

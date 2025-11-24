@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../db/connection.php';
+require_once __DIR__ . '/../db/connection.php'; 
 
 $mensagem = "";
 
@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <head>
     <meta charset="UTF-8">
     <title>Cadastrar Solicitação</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
@@ -41,7 +41,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <h1>ExamLink</h1>
     <nav>
         <a href="index.php">Início</a>
-        <a href="lista.php">Exames realizados</a>
+        <a href="src/lista.php">Exames solicitados</a>
+        <a href="src/realizados.php">Exames realizados</a> 
     </nav>
 </header>
 
@@ -57,17 +58,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <label>Nome:</label>
             <input type="text" name="nome" required>
         </div>
-
         <div class="form-group">
             <label>Setor:</label>
             <input type="text" name="setor" required>
         </div>
-
         <div class="form-group">
             <label>Exame:</label>
             <input type="text" name="exame" required>
         </div>
-
         <div class="form-group">
             <label>Observações:</label>
             <textarea name="observacoes" rows="4"></textarea>
