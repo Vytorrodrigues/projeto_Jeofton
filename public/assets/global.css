@@ -52,7 +52,7 @@ body {
     & .card {
     background-color: #faf7e8;
     border-radius: 8px;
-    padding: 20px;
+    padding: 28px;
     text-align: center;
     border: 1px solid #e0dabf;
     }
@@ -65,7 +65,7 @@ body {
 
 
 .card .ico {
-    max-width: 150px;
+    max-width: 200px;
     height: auto;   
     margin: 0 auto 10px;
 }
@@ -122,7 +122,7 @@ button, .btn {
     background-color: #8cc63e;
     color: #004d26;
     border: none;
-    padding: 8px 16px;
+    padding:10px;
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
@@ -132,6 +132,9 @@ button, .btn {
 
 button:hover, .btn:hover {
     background-color: #79b033;
+    transform: scale(1.1);
+    transition: width 0.3s ease-in, transform 0.3s ease-in;
+
 }
 
 table {

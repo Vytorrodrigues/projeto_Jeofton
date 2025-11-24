@@ -1,10 +1,10 @@
 <?php
 $host    = "localhost";
-$usuario = "root";
-$senha   = "dv1317";   
-$banco   = "hospital_db";
+$user = "root";
+$pass   = "";   
+$db   = "hospital_db";
 
-$conn = new mysqli($host, $usuario, $senha, $banco);
+$conn = new mysqli($host, $user, $pass, $db);
 
 if ($conn->connect_error) {
     die("Erro na conexão: " . $conn->connect_error);

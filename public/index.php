@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>ExamLink - Início</title>
-    <link rel="stylesheet" href="assets/style.css"> 
+    <link rel="stylesheet" href="assets/global.css"> 
 </head>
 <body>
 
@@ -16,8 +16,7 @@
     </nav>
 </header>
 
-<div class="container">
-
+<main class="container">
     <div class="cards">
         <div class="card">
             <img class="ico" src="assets/solicitação-icon.png" alt="prancheta">
@@ -34,7 +33,7 @@
             <p><a href="src/realizados.php">Realizados</a></p>
         </div>
     </div>
-</div>
+</main>
 
 </body>
 </html>

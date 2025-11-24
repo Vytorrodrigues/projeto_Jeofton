@@ -12,7 +12,7 @@ $result = $conn->query($sql);
 <head>
     <meta charset="UTF-8">
     <title>Exames realizados</title>
-    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../assets/global.css">
 </head>
 <body>
 
@@ -25,7 +25,7 @@ $result = $conn->query($sql);
         </nav>
 </header>
 
-<div class="main-content">
+<main class="main-content">
     <h2>Exames realizados (todas as solicitações feitas)</h2>
 
     <table>
@@ -60,7 +60,7 @@ $result = $conn->query($sql);
         <?php endif; ?>
         </tbody>
     </table>
-</div>
+</main>
 
 </body>
 </html>

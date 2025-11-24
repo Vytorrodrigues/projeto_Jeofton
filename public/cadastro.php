@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <head>
     <meta charset="UTF-8">
     <title>Cadastrar Solicitação</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/global.css">
 </head>
 <body>
 
@@ -71,7 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <textarea name="observacoes" rows="4"></textarea>
         </div>
 
-        <button type="submit">Salvar</button>
+        <button class="button" type="submit">Salvar</button>
         <a href="index.php" class="btn">Voltar</a>
     </form>
 </div>
