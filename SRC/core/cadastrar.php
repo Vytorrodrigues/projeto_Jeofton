@@ -1,5 +1,5 @@
 <?php
-include "../database/connection.php";
+include "../db/connection.php";
 
 $mensagem = "";
 

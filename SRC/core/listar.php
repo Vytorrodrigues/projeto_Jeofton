@@ -1,5 +1,5 @@
 <?php
-include "../database/connection.php";
+include "../db/connection.php";
 
 $sql = "SELECT id, nome, setor, exame, observacoes FROM pacientes ORDER BY id DESC";
 $result = $conn->query($sql);
